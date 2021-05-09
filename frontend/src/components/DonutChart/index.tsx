@@ -15,7 +15,6 @@ const DonutChart = () => {
     const [chartData, setChartData] = useState<ChartData>({ labels: [], series: [] });
 
     useEffect(() => {
-        //FORMA ERRADA
         axios.get(`${BASE_URL}/sales/amount-by-seller`)
             .then((response) => {
 
